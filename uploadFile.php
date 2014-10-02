@@ -5,5 +5,9 @@
 			$handle = fopen($file, "r");
 			return $handle;
 		}
+		
+		public static function closeFile($handle){
+			fclose($handle);
+		}
 	}
 ?>
