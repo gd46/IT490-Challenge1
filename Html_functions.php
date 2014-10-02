@@ -1,4 +1,5 @@
 <?php
+	
 	class Html_functions{
 		
 		public static function printTable($records,$url_var){

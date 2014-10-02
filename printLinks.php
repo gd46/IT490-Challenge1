@@ -17,4 +17,5 @@
 				
 			Html_functions::printTable($records, 'record');
 		}
+	}
 ?>

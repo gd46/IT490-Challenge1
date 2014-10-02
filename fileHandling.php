@@ -1,6 +1,8 @@
 <?php
+
 	class fileHandling {
-	
+		
+		
 		public function checkColumnheadings($handle, $hasColumnheadings){
 			
 			while(($row = fgetcsv($handle, ",")) !== FALSE){
@@ -15,4 +17,5 @@
 				}
 				return $records;
 		}
+	}
 ?>
