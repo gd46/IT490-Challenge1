@@ -1,5 +1,7 @@
 <?php
 	
+	require 'Html_functions.php';
+	
 	class printLinks {
 		
 		public function __construct($records){
@@ -13,12 +15,6 @@
 				}
 			}
 				
-			if(isset($_GET['record'])){
-				echo '<table border="1">';
-				foreach($records[$_GET['record']] as $key => $value){
-					echo '<tr><th>' . $key . '</th>';
-					echo '<td>' . $value . '</td></tr>';
-				}
-				echo '</table>';
+			Html_functions::printTable($records, 'record');
 		}
 ?>
