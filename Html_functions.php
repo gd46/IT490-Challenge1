@@ -3,6 +3,7 @@
 	
 	class Html_functions{
 		
+		//Function for printing a table by passing in an array, and passing in one url variable. 
 		public static function printTable($records,$url_var){
 			if(isset($_GET[$url_var])){
 				$file2 = uploadFile::fileUpload('hd2013_varlist.csv');

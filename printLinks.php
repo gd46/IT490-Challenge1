@@ -4,6 +4,9 @@
 	
 	class printLinks {
 		
+		//Function gets called when a new printLinks object is created. 
+		//This function prints links based of of the array it is passed. 
+		//Calls the printTable function to print the data for the record clicked. 
 		public function __construct($records){
 			
 			$i = -1;
