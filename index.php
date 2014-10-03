@@ -1,4 +1,5 @@
 <?php
+ini_set('auto_detect_line_endings', TRUE);
 
 require 'uploadFile.php';
 require 'fileHandling.php';
