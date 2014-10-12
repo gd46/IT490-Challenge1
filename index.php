@@ -27,6 +27,10 @@ $handle2 = new fileHandling();
 $records = $handle->checkColumnheadings($file, TRUE);
 $headings = $handle->checkColumnheadings($file2, TRUE);
 
+$collegeName = '';
+if(isset($_GET['record'])){
+	$collegeName = $records[$_GET['records']]['INSTNM'];
+}
 
 //Prints the array out in links, click a link to display the data for that record in the form of a table. 
 new printLinks($records);
