@@ -6,6 +6,7 @@ ini_set('auto_detect_line_endings', TRUE);
 require 'manageFile.php';
 require 'fileHandling.php';
 require 'printLinks.php';
+require 'Html_functions.php';
 
 //Stores the csv file in a variable and passes it to fileUpload to open the file for reading. 
 $csv = 'hd2013.csv';
