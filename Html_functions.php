@@ -35,5 +35,15 @@
 			}
 		}
 
+		public static function printTable($records, $headings, $printDirection){
+			
+			if($printDirection == 'vertical'){
+				Html_functions::printVerticaltable($records, $headings);
+			}
+			else{
+				Html_functions::printHorizontaltable($records,$headings);
+			}	
+		}
+
 	}
 ?>
