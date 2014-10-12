@@ -7,7 +7,12 @@ require 'manageFile.php';
 require 'fileHandling.php';
 require 'printLinks.php';
 require 'Html_functions.php';
+?>
 
+	<head>
+		<link rel ="stylesheet" type="text/css" href="style.css">
+	</head>
+<?php
 //Stores the csv file in a variable and passes it to fileUpload to open the file for reading. 
 $csv = 'hd2013.csv';
 $file = manageFile::fileUpload($csv);
