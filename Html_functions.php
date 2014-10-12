@@ -50,7 +50,14 @@
 			echo'</p>';
 		}
 
-		
+		public static function printTitle($collegeName){
+			if(empty($_GET)){
+				echo '<h1 id="title">List of Colleges</h1>';
+			}
+			else{
+				echo '<h1 id="title">'. $collegeName . ' Info'. '</h1>';
+			}
+		}
 
 	}
 ?>
