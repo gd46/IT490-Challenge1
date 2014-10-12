@@ -3,7 +3,7 @@
 	class manageFile {
 		
 		//Function for uploading a file for reading.	
-		public static function fileUpload($file){
+		public static function uploadFile($file){
 			$handle = fopen($file, "r");
 			return $handle;
 		}
