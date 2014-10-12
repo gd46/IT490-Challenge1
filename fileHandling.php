@@ -15,7 +15,7 @@
 						$records[] = $record;
 					}
 				}
-				uploadFile::closeFile($handle);
+				manageFile::closeFile($handle);
 				return $records;
 		}
 		
@@ -33,7 +33,7 @@
 					}	
 					
 				}
-				uploadFile::closeFile($handle);
+				manageFile::closeFile($handle);
 				return $records;
 		}
 	}

@@ -1,6 +1,6 @@
 <?php
 	
-	class uploadFile {
+	class manageFile {
 		
 		//Function for uploading a file for reading.	
 		public static function fileUpload($file){
