@@ -8,7 +8,7 @@
 			if(isset($_GET['record'])){
 				$table = '<div id="verticalTable"><table border="1">';
 				$i = 0;
-				foreach($records[$_GET['record'] as $key => $value){
+				foreach($records[$_GET['record']] as $key => $value){
 					$table .= '<tr><th>' . $headings[$i]['varTitle'] . '</th>';
 					$table .= '<td>' . $value . '</td></tr>';
 					$i++;
