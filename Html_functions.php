@@ -45,5 +45,12 @@
 			}	
 		}
 
+		public static function makeLink($urlVar, $increment,$title){
+			echo '<a href="?'.$urlVar.'=' .$increment. '">' . $title . '</a>';
+			echo'</p>';
+		}
+
+		
+
 	}
 ?>
