@@ -17,5 +17,23 @@
 				echo $table;
 			}
 		}
+
+		public static function printHorizontaltable($records, $headings){
+			if(isset($_GET['record'])){
+				$table = '<table border="1"><tr>';
+				$i = 0;
+				foreach($records[$_GET['record']] as $record){
+					$table .= '<th>' . $headings[$i]['varTitle'] . '</th>';
+					$i++;
+				}
+				$table .= '</tr><tr>';
+				foreach($records[$_GET['record']] as $key => $value){
+					$table .= '<td>' . $value . '</td>';
+				}
+				$table .= '</tr></table>';
+				echo $table;
+			}
+		}
+
 	}
 ?>
