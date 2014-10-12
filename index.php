@@ -29,7 +29,7 @@
 
 	$collegeName = '';
 	if(isset($_GET['record'])){
-		$collegeName = $records[$_GET['records']]['INSTNM'];
+		$collegeName = $records[$_GET['record']]['INSTNM'];
 	}
 ?>
 
