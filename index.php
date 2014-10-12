@@ -40,4 +40,10 @@
 		else{ ?>
 			<title>College List</title>
 		<?php } ?>
+	<?php Html_functions::printTitle($collegeName);?>
+	<div class = 'center'><?php new PrintLinks($records, $headings); ?></div>
+	<?php if(isset($_GET['record'])){ ?>
+		<a href="index.php">Go Back</a>
+	<?php } ?>
+	<?php Html_functions::printTable($records, $headings, 'vertical'); ?>
 </html>
