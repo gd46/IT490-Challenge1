@@ -3,10 +3,12 @@
 	ini_set('auto_detect_line_endings', TRUE);
 
 	//Gives access to functions in other files. 
-	require 'manageFile.php';
-	require 'fileHandling.php';
-	require 'printLinks.php';
-	require 'Html_functions.php';
+	//require 'manageFile.php';
+	//require 'fileHandling.php';
+	//require 'printLinks.php';
+	//require 'Html_functions.php';
+	require 'Autoloader.php';
+	spl_autoload_register('Autoloader::loader');
 ?>
 
 	<head>
