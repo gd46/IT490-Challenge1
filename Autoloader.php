@@ -18,5 +18,30 @@
 		}
 	}
 
+	/* 
+		Directory Structure:
+		
+		CSV_Files
+		|
+		|_ hd2013_varlist.csv
+		|_ hd2013.csv
+		|_ hd2013.xls
+
+		CSS
+		|
+		|_ style.css
+
+		Classes
+		|
+		|_ File
+			|
+			|_ manageFile.php
+			|_ fileHandling.php
+		|__ Html
+			|
+			|_ Html_functions.php
+			|_ printLinks.php
+
+	*/
 
 ?>
