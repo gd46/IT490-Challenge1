@@ -38,10 +38,10 @@
 		else{ ?>
 			<title>College List</title>
 		<?php } ?>
-	<?php \Classes\Html\Html_functions::printTitle($collegeName);?>
+	<?php \Classes\Html\htmlFunctions::printTitle($collegeName);?>
 	<div class = 'center'><?php new \Classes\Html\PrintLinks($records, $headings); ?></div>
 	<?php if(isset($_GET['record'])){ ?>
 		<a href="index.php">Go Back</a>
 	<?php } ?>
-	<?php \Classes\Html\Html_functions::printTable($records, $headings, 'vertical'); ?>
+	<?php \Classes\Html\htmlFunctions::printTable($records, $headings, 'vertical'); ?>
 </html>

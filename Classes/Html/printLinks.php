@@ -12,7 +12,7 @@
 			if(empty($_GET)){
 				foreach($records as $record){
 					$i++;
-					Html_functions::makeLink('record',$i, $record['INSTNM']);
+					\Classes\Html\htmlFunctions::makeLink('record',$i, $record['INSTNM']);
 				}
 			}
 		}
