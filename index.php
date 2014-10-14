@@ -3,10 +3,6 @@
 	ini_set('auto_detect_line_endings', TRUE);
 
 	//Gives access to functions in other files. 
-	//require 'manageFile.php';
-	//require 'fileHandling.php';
-	//require 'printLinks.php';
-	//require 'Html_functions.php';
 	require 'Autoloader.php';
 	spl_autoload_register('Autoloader::loader');
 ?>
@@ -23,8 +19,8 @@
 	$file2 = \Classes\File\manageFile::uploadFile($csv2);
 
 	//Creates a new fileHandling object passes the file in and stores the data into an array.
-	$handle = new fileHandling();
-	$handle2 = new fileHandling();
+	$handle = new \Classes\File\fileHandling();
+	$handle2 = new \Classes\File\fileHandling();
 
 	$records = $handle->checkColumnheadings($file, TRUE);
 	$headings = $handle->checkColumnheadings($file2, TRUE);
@@ -42,10 +38,10 @@
 		else{ ?>
 			<title>College List</title>
 		<?php } ?>
-	<?php Html_functions::printTitle($collegeName);?>
-	<div class = 'center'><?php new PrintLinks($records, $headings); ?></div>
+	<?php \Classes\Html\Html_functions::printTitle($collegeName);?>
+	<div class = 'center'><?php new \Classes\Html\PrintLinks($records, $headings); ?></div>
 	<?php if(isset($_GET['record'])){ ?>
 		<a href="index.php">Go Back</a>
 	<?php } ?>
-	<?php Html_functions::printTable($records, $headings, 'vertical'); ?>
+	<?php \Classes\Html\Html_functions::printTable($records, $headings, 'vertical'); ?>
 </html>
