@@ -2,7 +2,7 @@
 	
 	namespace Classes\Html;
 
-	class Html_functions{
+	class htmlFunctions{
 		
 		//Function for printing a table by passing in an array, and passing in one url variable. 
 		public static function printVerticaltable($records,$headings){
@@ -39,10 +39,10 @@
 		public static function printTable($records, $headings, $printDirection){
 			
 			if($printDirection == 'vertical'){
-				\Classes\Html\Html_functions::printVerticaltable($records, $headings);
+				\Classes\Html\htmlFunctions::printVerticaltable($records, $headings);
 			}
 			else{
-				\Classes\Html\Html_functions::printHorizontaltable($records,$headings);
+				\Classes\Html\htmlFunctions::printHorizontaltable($records,$headings);
 			}	
 		}
 
