@@ -2,7 +2,11 @@
 	
 	namespace Classes\File;
 
-	class manageFile{
+	interface manageFile_Template{
+		public static function uploadFile($file);
+		public static function closeFile($handle);
+	}
+	class manageFile implements manageFile_Template{
 		
 		//Function for uploading a file for reading.	
 		public static function uploadFile($file){
