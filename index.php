@@ -12,12 +12,12 @@
 ?>
 
 	<head>
-		<link rel ="stylesheet" type="text/css" href="style.css">
+		<link rel ="stylesheet" type="text/css" href="CSS/style.css">
 	</head>
 <?php
 	//Stores the csv file in a variable and passes it to fileUpload to open the file for reading. 
-	$csv = 'hd2013.csv';
-	$csv2 = 'hd2013_varlist.csv';
+	$csv = 'CSV_Files/hd2013.csv';
+	$csv2 = 'CSV_Files/hd2013_varlist.csv';
 
 	$file = \Classes\File\manageFile::uploadFile($csv);
 	$file2 = \Classes\File\manageFile::uploadFile($csv2);
