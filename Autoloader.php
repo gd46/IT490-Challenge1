@@ -13,7 +13,13 @@
 				$fileName .= str_replace('\\', DIRECTORY_SEPARATOR, $namespace) . DIRECTORY_SEPARATOR;
 			}
 			//$fileName .= str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';
-			$fileName .= $className . '.php';
+
+			$info = pathinfo($fileName);
+			$class_dir = $info['dirname'];
+
+			if($class_dir == 'Classes'){
+				$fileName .= $className . '.class.php';
+			}
 			require $fileName;
 		}
 	}
