@@ -19,8 +19,8 @@
 	$csv = 'hd2013.csv';
 	$csv2 = 'hd2013_varlist.csv';
 
-	$file = manageFile::uploadFile($csv);
-	$file2 = manageFile::uploadFile($csv2);
+	$file = \Classes\File\manageFile::uploadFile($csv);
+	$file2 = \Classes\File\manageFile::uploadFile($csv2);
 
 	//Creates a new fileHandling object passes the file in and stores the data into an array.
 	$handle = new fileHandling();

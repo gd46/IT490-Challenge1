@@ -15,7 +15,7 @@
 						$records[] = $record;
 					}
 				}
-				manageFile::closeFile($handle);
+				\Classes\File\manageFile::closeFile($handle);
 				return $records;
 		}
 	}

@@ -1,7 +1,7 @@
 <?php
 	
 	namespace Classes\File;
-
+	
 	class manageFile {
 		
 		//Function for uploading a file for reading.	
