@@ -1,8 +1,8 @@
 <?php
 	
 	namespace Classes\File;
-	
-	class manageFile {
+
+	class manageFile{
 		
 		//Function for uploading a file for reading.	
 		public static function uploadFile($file){
