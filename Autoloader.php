@@ -37,18 +37,18 @@
 		|
 		|_ File
 			|
-			|_ manageFile.class.php
-			|_ fileHandling.class.php
+			|_ manageFile.php
+			|_ fileHandling.php
 		|__ Html
 			|
-			|_ Html_functions.class.php
-			|_ printLinks.class.php
+			|_ Html_functions.php
+			|_ printLinks.php
 		|
 		|_ Interfaces
 			|
-			|_ manageFile.interface.php
-			|_ fileHandling.interface.php
-			|_ htmlFunctions.interface.php
+			|_ manageFile.php
+			|_ fileHandling.php
+			|_ htmlFunctions.php
 
 	*/
 
