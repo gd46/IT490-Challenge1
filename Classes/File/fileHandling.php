@@ -1,12 +1,8 @@
 <?php
 
 	namespace Classes\File;
-
-	interface fileHandling_template{
-		public function checkColumnheadings($handle, $hasColumnheadings);
-	}
 	
-	class fileHandling implements fileHandling_template{
+	class fileHandling implements \Interfaces\fileHandling{
 		
 		
 		public function checkColumnheadings($handle, $hasColumnheadings){

@@ -2,15 +2,7 @@
 	
 	namespace Classes\Html;
 
-	interface htmlFunctions_Template{
-		public static function printVerticaltable($records, $headings);
-		public static function printHorizontaltable($records, $headings);
-		public static function printTable($records, $headings, $printDirection);
-		public static function makeLink($urlVar, $increment,$title);
-		public static function printTitle($collegeName);
-
-	}
-	class htmlFunctions implements htmlFunctions_Template{
+	class htmlFunctions implements \Interfaces\htmlFunctions{
 		
 		//Function for printing a table by passing in an array, and passing in one url variable. 
 		public static function printVerticaltable($records,$headings){

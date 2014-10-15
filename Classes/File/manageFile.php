@@ -2,12 +2,7 @@
 	
 	namespace Classes\File;
 
-	//Interfaces declare what methods need to be created when using a class.
-	interface manageFile_Template{
-		public static function uploadFile($file);
-		public static function closeFile($handle);
-	}
-	class manageFile implements manageFile_Template{
+	class manageFile implements \Interfaces\manageFile {
 		
 		//Function for uploading a file for reading.	
 		public static function uploadFile($file){

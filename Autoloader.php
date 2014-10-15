@@ -12,14 +12,10 @@
 				$className = substr($className, $lastNsPos + 1);
 				$fileName .= str_replace('\\', DIRECTORY_SEPARATOR, $namespace) . DIRECTORY_SEPARATOR;
 			}
+			//Leave commented to allow underscores in filenames.cd 
 			//$fileName .= str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';
 
-			$info = pathinfo($fileName);
-			$class_dir = $info['dirname'];
-
-			if($class_dir == 'Classes'){
-				$fileName .= $className . '.class.php';
-			}
+			$fileName .= $className . '.php';
 			require $fileName;
 		}
 	}
@@ -41,12 +37,18 @@
 		|
 		|_ File
 			|
-			|_ manageFile.php
-			|_ fileHandling.php
+			|_ manageFile.class.php
+			|_ fileHandling.class.php
 		|__ Html
 			|
-			|_ Html_functions.php
-			|_ printLinks.php
+			|_ Html_functions.class.php
+			|_ printLinks.class.php
+		|
+		|_ Interfaces
+			|
+			|_ manageFile.interface.php
+			|_ fileHandling.interface.php
+			|_ htmlFunctions.interface.php
 
 	*/
 
